@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "712763070858",
+    "project_id": "whatsappchatting-6e665",
+    "storage_bucket": "whatsappchatting-6e665.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712763070858:android:b8e743fea0785db7dcd073",
+        "android_client_info": {
+          "package_name": "com.example.chattingwhatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712763070858-h6r7bqdivt1v81k564ffdejdr2gbica2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX9I26bAJh2zlvi3xJj4NcnbxwKv4TXF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712763070858-h6r7bqdivt1v81k564ffdejdr2gbica2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
