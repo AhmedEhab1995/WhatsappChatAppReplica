@@ -4,22 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECE5DD"
+    android:background="@color/backgroundwhatsapp"
+    app:backgroundTint="@color/whatsappGreen"
     tools:context=".activity_otpmessageverification">
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/profileimage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mobile_auth" />
 
     <TextView
-        android:id="@+id/phonenumbermessage"
+        android:id="@+id/profileinfomessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -29,21 +30,21 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/profileimage"
+        app:layout_constraintStart_toStartOf="@+id/profileimage"
+        app:layout_constraintTop_toBottomOf="@+id/profileimage" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/nameandimagemessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Enter ypur OTP to verify your phone number"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/phonenumbermessage"
-        app:layout_constraintStart_toStartOf="@+id/phonenumbermessage"
-        app:layout_constraintTop_toBottomOf="@+id/phonenumbermessage" />
+        app:layout_constraintEnd_toEndOf="@+id/profileinfomessage"
+        app:layout_constraintStart_toStartOf="@+id/profileinfomessage"
+        app:layout_constraintTop_toBottomOf="@+id/profileinfomessage" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -56,7 +57,7 @@
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/nameandimagemessage">
 
 
     <LinearLayout
@@ -69,26 +70,26 @@
             android:id="@+id/otpView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:inputType="number"
-            android:layout_gravity="center"
-            android:itemBackground="#F1F1F1"
-
+            android:itemBackground="#F2F2F2"
             android:textColor="@android:color/black"
             app:OtpItemCount="6"
-            app:OtpLineColor="#F1F1F1"
+            app:OtpLineColor="#F2F2F2"
             app:OtpViewType="line"
             />
 
         <Button
-            android:id="@+id/sendButton"
+            android:id="@+id/SetupButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="#128C7E"
+            android:background="@color/whatsappGreen"
             android:text="Continue"
-            android:textColorLink="#009688" />
+            android:textColorLink="@color/whatsappGreen"
+            app:backgroundTint="@color/whatsappGreen" />
     </LinearLayout>
     </androidx.cardview.widget.CardView>
 

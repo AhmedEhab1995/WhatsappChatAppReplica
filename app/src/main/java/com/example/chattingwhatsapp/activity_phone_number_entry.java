@@ -17,8 +17,10 @@ public class activity_phone_number_entry extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_number_entry);
-        send = findViewById(R.id.sendButton);
-        phoneNumber = findViewById(R.id.phoneEntry);
+        getSupportActionBar().hide();
+
+        send = findViewById(R.id.SetupButton);
+        phoneNumber = findViewById(R.id.nameentry);
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

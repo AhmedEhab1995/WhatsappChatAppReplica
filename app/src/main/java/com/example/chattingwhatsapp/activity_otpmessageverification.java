@@ -1,6 +1,5 @@
 package com.example.chattingwhatsapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -10,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.chattingwhatsapp.databinding.ActivityOtpmessageverificationBinding;
-import com.example.chattingwhatsapp.databinding.ActivityPhoneNumberEntryBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
@@ -36,10 +34,13 @@ public class activity_otpmessageverification extends AppCompatActivity {
         OtpActivityOtpmessageverificationBinding = ActivityOtpmessageverificationBinding.inflate(getLayoutInflater());
         setContentView(OtpActivityOtpmessageverificationBinding.getRoot());
 
+        getSupportActionBar().hide();
+
         auth = FirebaseAuth.getInstance();
         String phoneNumber = getIntent().getStringExtra("phone number");
-        phoneNumberMessage = findViewById(R.id.phonenumbermessage);
+        phoneNumberMessage = findViewById(R.id.profileinfomessage);
         phoneNumberMessage.setText("Verify " + phoneNumber + " is your phone number");
+
 
         PhoneAuthOptions phoneAuthOptions = PhoneAuthOptions.newBuilder(auth)
                 .setPhoneNumber(phoneNumber)

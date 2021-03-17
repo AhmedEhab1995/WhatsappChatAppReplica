@@ -6,24 +6,24 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundwhatsapp"
     app:backgroundTint="@color/whatsappGreen"
-    tools:context=".activity_phone_number_entry">
+    tools:context=".setupProfile">
 
     <ImageView
         android:id="@+id/profileimage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mobile_auth" />
+        app:srcCompat="@drawable/avatar" />
 
     <TextView
         android:id="@+id/profileinfomessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Verify your phone number"
+        android:text="Profile info"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold|italic"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Sms will be sent shortly to verify your number"
+        android:text="Please set your name and add a profile image"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/profileinfomessage"
         app:layout_constraintStart_toStartOf="@+id/profileinfomessage"
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Type your phone number"
+                android:hint="Please type your name "
                 android:inputType="phone"
                 android:shadowColor="@color/whatsappGreen"
                 android:textColorHighlight="@color/whatsappGreen"
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@color/whatsappGreen"
-                android:text="Continue"
+                android:text="Setup profile"
                 app:backgroundTint="@color/whatsappGreen" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
