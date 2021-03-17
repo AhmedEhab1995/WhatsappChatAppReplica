@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/mobile_auth" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/phonenumbermessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -38,9 +38,9 @@
         android:gravity="center"
         android:text="Sms will be sent shortly to verify your number"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/phonenumbermessage"
+        app:layout_constraintStart_toStartOf="@+id/phonenumbermessage"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumbermessage" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

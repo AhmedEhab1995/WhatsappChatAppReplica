@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/mobile_auth" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/phonenumbermessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -41,9 +41,9 @@
         android:gravity="center"
         android:text="Enter ypur OTP to verify your phone number"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/phonenumbermessage"
+        app:layout_constraintStart_toStartOf="@+id/phonenumbermessage"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumbermessage" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -65,19 +65,20 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/phoneEntry"
-            android:layout_width="match_parent"
+        <com.mukesh.OtpView
+            android:id="@+id/otpView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="Type OTP here"
-            android:inputType="number|phone"
-            android:shadowColor="#128C7E"
-            android:textColor="#128C7E"
-            android:textColorHighlight="#128C7E"
-            android:textColorHint="#128C7E"
-            android:textColorLink="#128C7E"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:itemBackground="#F1F1F1"
+
+            android:textColor="@android:color/black"
+            app:OtpItemCount="6"
+            app:OtpLineColor="#F1F1F1"
+            app:OtpViewType="line"
             />
 
         <Button
@@ -86,7 +87,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#128C7E"
-            android:text="Continue" />
+            android:text="Continue"
+            android:textColorLink="#009688" />
     </LinearLayout>
     </androidx.cardview.widget.CardView>
 
