@@ -76,9 +76,9 @@ public class activity_otpmessageverification extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            Toast.makeText(activity_otpmessageverification.this, "Successfully logged in ", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(activity_otpmessageverification.this, MainActivity.class);
+                            Intent intent = new Intent(activity_otpmessageverification.this, setupProfile.class);
                             startActivity(intent);
+                            finishAffinity();
                         }
                         else{
                             Toast.makeText(activity_otpmessageverification.this, "Wrong Otp", Toast.LENGTH_LONG).show();

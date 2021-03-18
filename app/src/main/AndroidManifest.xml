@@ -17,13 +17,10 @@
         <activity android:name=".activity_phone_number_entry">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity_otpmessageverification"
-            android:windowSoftInputMode="stateVisible"></activity>
+        <activity android:name=".activity_otpmessageverification"/>
         <activity android:name=".MainActivity" />
     </application>
 

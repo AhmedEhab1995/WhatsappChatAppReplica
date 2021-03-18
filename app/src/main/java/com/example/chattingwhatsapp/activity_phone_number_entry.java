@@ -8,16 +8,27 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class activity_phone_number_entry extends AppCompatActivity {
 
     Button send;
     EditText phoneNumber;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_number_entry);
         getSupportActionBar().hide();
+
+        auth = FirebaseAuth.getInstance();
+
+        if(auth.getCurrentUser() != null){
+            Intent intent = new Intent(activity_phone_number_entry.this ,MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
         send = findViewById(R.id.SetupButton);
         phoneNumber = findViewById(R.id.nameentry);

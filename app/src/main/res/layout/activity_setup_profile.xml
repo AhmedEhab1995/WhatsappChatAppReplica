@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Please type your name "
-                android:inputType="phone"
+                android:inputType="textPersonName"
                 android:shadowColor="@color/whatsappGreen"
                 android:textColorHighlight="@color/whatsappGreen"
                 android:textColorLink="@color/whatsappGreen" />
