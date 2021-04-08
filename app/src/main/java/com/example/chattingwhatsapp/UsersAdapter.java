@@ -1,6 +1,7 @@
 package com.example.chattingwhatsapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,16 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersViewHol
         Glide.with(context).load(user.getImageString())
                 .placeholder(R.drawable.avatar)
                 .into(holder.binding.profilepicture);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ChatPage.class);
+                intent.putExtra("name", user.getName());
+                intent.putExtra("image", user.getImageString());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
