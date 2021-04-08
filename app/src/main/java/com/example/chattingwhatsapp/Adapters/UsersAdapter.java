@@ -1,4 +1,4 @@
-package com.example.chattingwhatsapp;
+package com.example.chattingwhatsapp.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.chattingwhatsapp.Activities.ChatPage;
+import com.example.chattingwhatsapp.R;
+import com.example.chattingwhatsapp.Models.User;
 import com.example.chattingwhatsapp.databinding.OneaccountrowBinding;
 
 import java.util.ArrayList;

@@ -13,17 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChattingWhatsapp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ChatPage"></activity>
-        <activity android:name=".setupProfile" />
-        <activity android:name=".activity_phone_number_entry">
+        <activity android:name=".Activities.ChatPage"></activity>
+        <activity android:name=".Activities.setupProfile" />
+        <activity android:name=".Activities.activity_phone_number_entry">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_otpmessageverification" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activities.activity_otpmessageverification" />
+        <activity android:name=".Activities.MainActivity" />
     </application>
 
 </manifest>

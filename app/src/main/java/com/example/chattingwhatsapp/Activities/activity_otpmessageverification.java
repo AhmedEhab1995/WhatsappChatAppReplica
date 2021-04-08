@@ -1,4 +1,4 @@
-package com.example.chattingwhatsapp;
+package com.example.chattingwhatsapp.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.chattingwhatsapp.R;
 import com.example.chattingwhatsapp.databinding.ActivityOtpmessageverificationBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

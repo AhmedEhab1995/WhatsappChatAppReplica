@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundwhatsapp"
     app:backgroundTint="@color/whatsappGreen"
-    tools:context=".setupProfile">
+    tools:context=".Activities.setupProfile">
 
     <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/profileimage"

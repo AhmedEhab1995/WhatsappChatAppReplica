@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundwhatsapp"
     app:backgroundTint="@color/whatsappGreen"
-    tools:context=".activity_otpmessageverification">
+    tools:context=".Activities.activity_otpmessageverification">
 
 
     <ImageView

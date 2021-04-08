@@ -1,4 +1,4 @@
-package com.example.chattingwhatsapp;
+package com.example.chattingwhatsapp.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.chattingwhatsapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class activity_phone_number_entry extends AppCompatActivity {

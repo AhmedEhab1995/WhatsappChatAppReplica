@@ -1,4 +1,4 @@
-package com.example.chattingwhatsapp;
+package com.example.chattingwhatsapp.Activities;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,6 +7,9 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.chattingwhatsapp.Adapters.UsersAdapter;
+import com.example.chattingwhatsapp.R;
+import com.example.chattingwhatsapp.Models.User;
 import com.example.chattingwhatsapp.databinding.ActivityMainBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

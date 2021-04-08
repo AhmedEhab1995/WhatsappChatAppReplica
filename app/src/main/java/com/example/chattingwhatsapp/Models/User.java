@@ -1,4 +1,4 @@
-package com.example.chattingwhatsapp;
+package com.example.chattingwhatsapp.Models;
 
 public class User {
     String name, uniqueId, phoneNumber, imageString;
